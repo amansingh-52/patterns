@@ -15,3 +15,13 @@ fun main() {
 }
 
 fun getDuck(): Duck = ModelDuck()
+
+
+/**
+
+I'm a model 🦆
+I can't fly
+I'm flying with 🚀 🚀 🚀
+Quack quack!!!
+
+ **/
