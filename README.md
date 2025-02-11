@@ -29,6 +29,41 @@ The **Strategy Pattern** defines a family of algorithms, encapsulates each one, 
 ### Example Usage  
 Imagine a duck simulation game where different ducks can have different flying and quacking behaviors. Instead of hardcoding behaviors, the Strategy Pattern allows assigning behaviors dynamically.  
 
+
+```mermaid
+graph TD;
+
+    Duck["Duck (Base Class)"];
+    FlyBehaviour["FlyBehaviour (Interface)"];
+    QuackBehaviour["QuackBehaviour (Interface)"];
+
+    MallardDuck["MallardDuck"];
+    ModelDuck["ModelDuck"];
+
+    FlyWithWings["FlyWithWings"];
+    FlyNoFly["FlyNoFly"];
+    FlyRocketPowered["FlyRocketPowered"];
+
+    Quack["Quack"];
+    MuteQuack["MuteQuack"];
+    Squeak["Squeak"];
+
+    MallardDuck -->|inherits| Duck;
+    ModelDuck -->|inherits| Duck;
+
+    Duck --|has-a|--> FlyBehaviour;
+    Duck --|has-a|--> QuackBehaviour;
+
+    FlyWithWings -.->|implements| FlyBehaviour;
+    FlyNoFly -.->|implements| FlyBehaviour;
+    FlyRocketPowered -.->|implements| FlyBehaviour;
+
+    Quack -.->|implements| QuackBehaviour;
+    MuteQuack -.->|implements| QuackBehaviour;
+    Squeak -.->|implements| QuackBehaviour;
+
+```
+
 ---
 
 ## Contributing  
