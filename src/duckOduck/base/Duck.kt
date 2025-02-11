@@ -1,7 +1,7 @@
-package base
+package duckOduck.base
 
-import behaviour.fly.interfaces.FlyBehaviour
-import behaviour.quack.interfaces.QuackBehaviour
+import duckOduck.behaviour.fly.interfaces.FlyBehaviour
+import duckOduck.behaviour.quack.interfaces.QuackBehaviour
 
 abstract class Duck {
     protected abstract var flyBehaviour: FlyBehaviour

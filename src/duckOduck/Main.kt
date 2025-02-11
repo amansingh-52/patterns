@@ -1,6 +1,8 @@
-import base.Duck
-import behaviour.fly.FlyRocketPowered
-import ducks.ModelDuck
+package duckOduck
+
+import duckOduck.base.Duck
+import duckOduck.behaviour.fly.FlyRocketPowered
+import duckOduck.ducks.ModelDuck
 
 
 fun main() {

@@ -1,4 +1,4 @@
-package behaviour.quack.interfaces
+package duckOduck.behaviour.quack.interfaces
 
 interface QuackBehaviour {
     fun quack()

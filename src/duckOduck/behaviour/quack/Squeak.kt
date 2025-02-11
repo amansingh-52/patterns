@@ -1,6 +1,6 @@
-package behaviour.quack
+package duckOduck.behaviour.quack
 
-import behaviour.quack.interfaces.QuackBehaviour
+import duckOduck.behaviour.quack.interfaces.QuackBehaviour
 
 class Squeak : QuackBehaviour {
     override fun quack() {

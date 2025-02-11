@@ -1,6 +1,6 @@
-package behaviour.fly
+package duckOduck.behaviour.fly
 
-import behaviour.fly.interfaces.FlyBehaviour
+import duckOduck.behaviour.fly.interfaces.FlyBehaviour
 
 class FlyRocketPowered : FlyBehaviour {
     override fun fly() {
